@@ -14,14 +14,11 @@ table, th, td{
     border:1px solid #868585;
     text-align: center;
     height: 50px;
-    width: 1000px;
-    margin: 100px 5px 50px 130px;
     
 }
 table{
     border-collapse:collapse;
-    width: 50px;
-    height: 50px;
+    margin-left: 200px;
 }
 table tr:nth-child(odd){
     background-color:#FFFACD;
@@ -42,7 +39,7 @@ table tr:nth-child(1){
                 $result = mysqli_query($conn, $sql);
 
                 
-                echo "<p align='center'><font size='5'> THÔNG TIN SỮA</font></P>";
+                echo "<p align='center'><font size='5' style='color:white'> THÔNG TIN SỮA</font></P>";
                 echo "<table align='center' width='auto'cellpadding='2' cellspacing='2' style='bordercollapse:collapse'>";
                 echo '<tr>
                 <th width="50">STT</th>
