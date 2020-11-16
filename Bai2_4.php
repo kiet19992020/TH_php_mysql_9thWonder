@@ -27,9 +27,13 @@ table tr:nth-child(even){
 table tr:nth-child(1){
     background-color:skyblue;
 }
+.content2_4{
+    margin-left: 300px;
+}
 </style>
 <body>
-<?php           
+    <div class="content2_4">
+    <?php           
                 
                 $conn = mysqli_connect("localhost", "root", "", "qlbansua");
                 mysqli_set_charset($conn, 'UTF8');
@@ -50,7 +54,7 @@ table tr:nth-child(1){
               
 
 
-                echo "<p align='center'><font size='5'> THÔNG TIN SỮA</font></P>";
+                echo "<p align='center' style='color:white'><font size='5'> THÔNG TIN SỮA</font></P>";
                 echo "<table align='center' width='auto'cellpadding='2' cellspacing='2' style='bordercollapse:collapse'>";
                 echo '<tr>
                 <th width="50">STT</th>
@@ -107,10 +111,11 @@ table tr:nth-child(1){
                 echo "<a href=" .$_SERVER['PHP_SELF']. "?page2_4="
                 .$i.">".$i."</a> ";
                 }
-
                 echo '</p>';
 
-?>  
+?> 
+    </div>
+ 
 
 </body>
 </html>
